@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,
+               initial-scale=1.0,
+               maximum-scale=1.0,
+               user-scalable=no">
 
     <title>Mosógép</title>
 
     <style>
         * {
             box-sizing: border-box;
+
+            /* Ne lehessen kijelölni a szöveget */
+            -webkit-user-select: none;
+            user-select: none;
+
+            /* Mobilos hosszan nyomás menü kikapcsolása */
+            -webkit-touch-callout: none;
+        }
+
+        html,
+        body {
+            touch-action: manipulation;
         }
 
         body {
